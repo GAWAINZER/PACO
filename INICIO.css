@@ -1,0 +1,203 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 00;/*no borrar, crea margenes auto de 10 px*/
+    padding: 00;/*no borrar, crea margenes auto de 10 px*/
+}
+header {
+    background-color: #333;
+    position: sticky;/*panel fijo*/
+    top: 0; /* Fija el panel en la parte superior de la ventana */
+    z-index: 100;/*poner por encima*/
+    color: white;/*color de letra*/
+    padding: 15px;/*ajusta el ancho del panel de nav*/
+    align-items: center; /* Centrar verticalmente los elementos */
+}
+
+
+/* Estilos para el panel de navegación */
+.navbar {
+    display: flex;/*ajusta la posicion de los elementos de manera horizontal del panel de nav*/
+    justify-content: space-between;/*da espacio entre los elementos*/
+    align-items: center;/*alinea los elementos*/
+}
+
+.navbar ul {
+    list-style:none;/*para añadir icono al lado der del texto de cada list*/
+    display: flex;/*lista de manera horizontal */
+}
+
+.navbar li {
+    margin-right: 30px;/*da espacio entre las listas*/
+}
+
+.navbar a {
+    text-decoration:none;/*opciones de texto lineas arriba o abajo*/
+    color: rgb(255, 255, 255);/*color para el texto de las listas*/
+}
+
+/* Estilos para los botones */
+.buttons button {
+    background-color: #cc5200;/*color boton*/
+    color: white;/*color de letra*/
+    border-radius: 18px;/*radio*/
+    padding: 10px 20px;/*tamaños*/
+    cursor: pointer;/*cambia puntero*/
+    margin-left: 20px;/*espacioentre ellos*/
+}
+
+/* Estilos para el carrusel de imágenes */
+.client-services {
+    margin: 20px 0;/*espacio arriba abajo*/
+    overflow: hidden;/*cuando no se ve */
+}
+
+.slideshow {
+    white-space: nowrap;
+    animation: slide 22s linear infinite;/*da movimiento y tiempo*/
+    display:inline-flex;/*alineacion superior de imagenes*/
+    overflow: hidden;
+}
+
+
+
+.slideshow img {
+    max-width: auto;
+    height: 200px;/*ajustar alto de imagen en carrusel*/
+}
+
+@keyframes slide {/*movimiento entre imagenees y tiempo*/
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-10%);
+    }
+    50% {
+        transform: translateX(-20%);
+    }
+    75% {
+        transform: translateX(-30%);
+    }
+}
+
+/* Estilos para la sección de información de clientes */
+.client-information {
+    padding: 80px;/*espacio margen superior*/
+    background-color: #f9f9f9;
+    max-width: 1000px;/*ancho*/
+    margin: auto;
+}
+
+.client-information h2 {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0px;
+    margin-inline-end: 50px;
+}
+
+.client-information p {
+    margin: 30px 60px;
+    text-align: left;
+}
+
+.centered-image {
+    margin-top: 80px;/*espacio para la imagen*/
+    text-align: center;/*ubicacion*/
+}
+
+.centered-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para la sección de fotos de ancho completo */
+.full-width-photos {
+    display: flex;
+    
+    justify-content: space-between;
+   
+    padding: 40px;/*espacio entre seccion*/
+    max-width: 1200px;/*ancho*/
+    margin: auto;/*ajusta en el espacio al centro*/
+}
+
+.photo {
+    flex: 0 0 calc(33.33% - 8px);
+    margin: 5px;
+    
+}
+
+.photo img {
+    width: 94%;/*ajusta ancho*/
+    height: 200px;/*ajustar alto de imagen en carrusel*/
+}
+
+/* Estilos para el pie de página */
+footer {
+    align-items: center;
+    text-align: center;
+    background-color: rgb(168, 100, 100);
+    padding: 20px;/*margen de lados*/
+    align-items: center
+}
+
+.footer-left {
+    flex: 1;
+    text-align: left;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-center {
+    flex: 2;
+}
+
+.footer-center a {
+    margin: 10px 10px;
+}
+
+.footer-center img {
+    width: 30px;
+    height: 30px;
+}
+
+.footer-right {
+    flex-basis: calc(50% - 100px); /* Divide el espacio en dos columnas, menos el ancho del logo */
+    text-align: right;
+    height: 100%; /* Establece una altura máxima para que ocupe toda la altura disponible */
+}
+
+.footer-right ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0px; /* Elimina el margen inferior para alinear la lista en la parte superior */
+}
+
+.footer-right ul li {
+    margin-bottom: 10px;/*espacio entre elementos de lista*/
+    text-align: right; /* Alinea el texto a la derecha */
+}
+.footer-other {
+    flex-basis: calc(50% - 100px); /* Divide el espacio en dos columnas, menos el ancho del logo */
+    text-align: left;
+    height: 100%; /* Establece una altura máxima para que ocupe toda la altura disponible */
+}
+
+.footer-other ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0px; /* Elimina el margen inferior para alinear la lista en la parte superior */
+}
+
+.footer-other ul li {
+    margin-bottom: 10px;/*espacio entre elementos de lista*/
+    text-align: left; /* Alinea el texto a la derecha */
+}
+.copy{
+    color: rgb(35, 28, 28);
+    font-size: 15px;
+    margin: 15px;
+}
+
